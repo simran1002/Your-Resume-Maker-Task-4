@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            border: none;
+        }
+        .container .box1{
+            margin-top: 0px;
+           padding: 10px 10px 10px 10px;
+           margin: 5px;
+        }
+        .container.box2{
+            margin-top: 0px;
+           padding: 10px 10px 10px 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <%-include("./partial/nevbar");-%>
+    <br>
+    <br>
+    <center><h3>Click on template to make your resume</h3></center>
+    <div class="container">
+        <div class="box1">
+          <a href="/resume/1">
+              <img src="img/template1.jpg"height="800px"width="700px"></img>
+          </a>
+        </div>
+        <div class="box1">
+            <a href="/resume/2">
+                <img src="img/template2.jpg"width="700px"height="800px"></img>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
+

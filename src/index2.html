@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        .container{
+            margin: 0px;
+            padding: 0px;
+            width:130vh;
+           height: 140vh;
+            border: 2px solid rgb(19, 11, 11);
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .container .top1{
+            margin-top: 0px;
+          height: 15vh;
+            background-color: rgb(20, 20, 51);
+            justify-content: center;
+            align-items: center;
+        }
+        .container .top1 #name{
+           
+            font-size: 30px;
+            font-weight: bold;
+            color: burlywood;
+           margin-left:260px;
+          padding: 20px 20px 20px 20px;
+
+        }
+        .container .top1 #job{
+            
+            font-size: 15px;
+            font-weight: bold;
+            color: burlywood;
+           margin-left:340px;
+           padding: 5px;
+
+        }
+        .container .mid{
+            margin:0px;
+            display: flex;
+        }
+        .container .mid .side1{
+            padding: 20px;
+        }
+        .container .mid .side1 #main{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+        .container .mid .side1 #mypara{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+        }
+        .container .mid .side1 .one{
+            padding: 5px;
+        }
+        .container .mid .side2{
+            padding: 20px;
+        }
+        .container .mid .side2 #head{
+            font-size: 17px;
+             font-weight: bolder;
+        }
+        .container .mid .side2 #mypara{
+            padding:3px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(1, 1, 16);
+            font-weight: 500;
+        }
+        .container .mid .side2 #mypara2{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(38, 38, 40);
+            font-weight: 300;
+        }
+        .container .mid .side2 #mypara3{
+            padding: 3px;
+        }
+        .container .mid .side2 li{
+            padding: 4px;
+            font-size: 15px;
+            font-style: italic;
+        }
+        .container .side1 hr{
+            height: 2px;
+            background-color: rgb(7, 7, 36);
+        }
+        .container .side2 hr{
+            height: 1px;
+            background-color: rgb(5, 5, 41);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top1">
+          <p id="name">{{this.name}}</p>
+          <p id="job">PROFESSIONAL TITLE</p>
+        </div>
+      <div class="mid">
+        <div class="side1">
+             <p id="main">C O N T A C T</p>
+             <hr><br>
+             <p class="one">{{this.phone}}<br></p>
+                <p class="one">{{this.email}}<br></p>
+                <p class="one">{{this.city}},{{this.state}},{{this.country}}<br></p>
+                <p class="one">{{this.linkdin}}<br><br></p>
+             <p id="main">E D U C A T I O N</p>
+             <hr><br>
+             <p id="para1">{{this.post}}</p><br>
+             <p class="one">{{this.companyname}}</p>
+             <p class="one">{{this.tperiod}}<br>
+                <br></p>
+             <!-- <p id="para1">DEGREE/DIPLOMA</p><br>
+             <p class="one"> University/College Name</p>
+                <p class="one"> City, State, Country
+             YEAR-YEAR<br></p>
+             <br> -->
+             <p id="main">S K I L L S</p><hr><br>
+             <ul>
+                <li><p class="one">Positive Attitude</li>
+                <li><p class="one">Entrepreneurial Mindset</li>
+                <li><p class="one">Project Management</p></li>
+                <li><p class="one">Adaptbility and Agility</p></li>
+                <li><p class="one">Internal Accounting</p></li>
+                <li><p class="one">Web Analysis</p></li>
+
+             </ul><br>
+             <p id="main">C O M P U T E R</p><hr><br>
+             <p class="one"> Adobe Creative Suite</p>
+                <p class="one"> HTML Web Coding</p>
+                    <p class="one">Microsoft Office 360</p>
+        </div>
+        <div class="side2">
+            <p id="head">P R O F I L E</p>
+            <hr><br>
+            <p>
+            About yourself, short summary of your career, the success you have had, and where you see yourself in the future. If possible  give 
+            real examples//numbers showing your success</p><br>
+            <p id="head">W O R K  E X P E R I E N C E</p>
+            <hr><br>
+            <p id="mypara">PROFFESSIONAL TITLE</p>
+            <p id="mypara2">Company Name- City, State, Country - YEAR-YEAR</p><br>
+            <p id="mypara3">Short Summary about the company and your impact at Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Quidem, quia!</p><br>
+                <ul>
+                    <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                         Suscipit minima rerum natus qui. Aut nesciunt magnam consectetur. Reprehenderit, odio dicta.</p></li>
+                         <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Suscipit minima rerum natus qui. Aut nesciunt magnam consectetur. Reprehenderit, odio dicta.</p></li>
+                            <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Suscipit minima rerum natus qui. Aut nesciunt magnam consectetur. Reprehenderit, odio dicta.</p></li>
+                    
+                </ul><br>
+                <p id="mypara">PROFFESSIONAL TITLE</p>
+                <p id="mypara2">Company Name- City, State, Country - YEAR-YEAR</p><br>
+                <p id="mypara3">Short Summary about the company and your impact at Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. Quidem, quia!</p><br>
+                <ul>
+                    <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                         Suscipit minima rerum natus qui. Aut nesciunt magnam consectetur. Reprehenderit, odio dicta.</p></li>
+                         <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Suscipit minima rerum natus qui. Aut nesciunt magnam consectetur. Reprehenderit, odio dicta.</p></li>
+                            <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Suscipit minima rerum natus qui. Aut nesciunt magnam consectetur. Reprehenderit, odio dicta.</p></li>
+                    
+                </ul><br>
+                <p id="mypara">PROFFESSIONAL TITLE</p>
+                <p id="mypara2">Company Name- City, State, Country - YEAR-YEAR</p><br>
+                
+                <ul>
+                    <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                         Suscipit minima rerum natus qui. Aut nesciunt magnam consectetur. Reprehenderit, odio dicta.</p></li>
+                         <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Suscipit minima rerum natus qui. Aut nesciunt magnam consectetur. Reprehenderit, odio dicta.</p></li>
+                            <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Suscipit minima rerum natus qui. Aut nesciunt magnam consectetur. Reprehenderit, odio dicta.</p></li>
+                    
+                </ul><br>
+               
+
+        </div>
+      </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+    
+          background-color: solid white;
+           width:100vh;
+           padding-left: 60px;
+           padding-right: 60px;
+           padding-top: 50px;
+            border: 2px solid rgb(19, 11, 11);
+            margin: auto;
+           
+            box-shadow: 10px 10px;
+            color:rgb(9, 9, 46)
+            
+        }
+        .container .top1 ul{
+           padding:0px;
+        }
+        .container .top1 ul li{
+          
+           float:left;
+         margin: 10px;
+        }
+        .container p{
+            font-weight: bolder;
+           color: blue;
+        }
+        .container .top1 #para{
+            font-size: larger;
+            font-weight: bold;
+        }
+        .container hr{
+            height: 2px;
+            background-color: rgb(136, 136, 154);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top1">
+            <p id="para">{{this.name}}</p>
+            <ul>
+            <li>{{this.email}}</li>
+            <li>{{this.phone}}</li>
+            <!-- <li>{{this.city}}</li> -->
+           </ul>
+           <br><br>
+        <hr></hr>
+    </div>
+      
+        <div class="top2">
+            <p>About Me</p>
+            <ul>
+                <li>{{this.applying}}</li>
+                <li>{{this.shortDisc}}</li>
+                <!-- <li>Enter academic achievements,career goals,etc,here</li> -->
+                
+            </ul><br>
+            <hr></hr>
+           </div>
+
+
+           <div class="top3">
+           
+            <p>Professional Experience</p>
+            Company Name,Dates Of Employment
+            <ul>
+                <li>{{this.post}}</li>
+                <li>{{this.tperiod}}</li>
+               
+            </ul>
+           
+            <p>Educations</p>
+            Graduatiion/Diploma/10+2
+            <ul>
+                <li>{{this.graduation}}</li>
+                <li>{{this.seniorsec}}</li>
+                
+            </ul>
+            
+            <p>Project</p>
+            
+            <ul>
+                <li>{{this.project1}}</li>
+                <li>{{this.project2}}</li>
+               
+            </ul>
+            <br>
+            <hr></hr>
+           
+          <div class="top3">
+            <p>Skills</p>
+            <ul>
+                <li>{{this.skill1}}</li>
+                <li>{{this.skill2}}</li>
+                
+            </ul>
+           
+           </div>
+    </div>
+</body>
+</html>
